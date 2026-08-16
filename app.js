@@ -5,6 +5,11 @@ const app = express();
 const port = process.env.PORT || 3000;
 const environment = process.env.APP_ENV || "local";
 
+app.use((req, res, next) => {
+  console.log(`${req.method} ${req.path}`);
+  next();
+});
+
 app.get("/", (req, res) => {
   res.json({
     service: "novastack-e2e-demo",
