@@ -4,7 +4,7 @@ nameOverride: novastack-e2e-demo-dev
 
 image:
   repository: ghcr.io/github1001/novastack-e2e-demo
-  tag: dev
+  tag: adbb2a4407f4dcc92f1629e4187ee47684d3c88f
   pullPolicy: Always
 
 service:
