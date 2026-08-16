@@ -1,0 +1,15 @@
+replicaCount: 1
+
+nameOverride: novastack-e2e-demo-dev
+
+image:
+  repository: ghcr.io/github1001/novastack-e2e-demo
+  tag: dev
+  pullPolicy: Always
+
+service:
+  type: ClusterIP
+  port: 3000
+
+config:
+  appEnv: dev
